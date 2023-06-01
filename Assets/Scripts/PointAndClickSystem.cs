@@ -6,6 +6,8 @@ public class PointAndClickSystem : MonoBehaviour
 {
     public SpriteRenderer sr;
 
+    
+
     [Header("Come Back To Place")]
     public float time = 1f;
     public  Vector2 initialPosition;
