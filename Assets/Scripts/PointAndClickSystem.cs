@@ -27,7 +27,6 @@ public class PointAndClickSystem : MonoBehaviour
     public float time = 1f;
     public  Vector2 initialPosition;
     public float speed = 5f;
-    public AnimationCurve accelerationCurve;
 
     private bool isClicking;
     private void Start()
@@ -123,7 +122,7 @@ public class PointAndClickSystem : MonoBehaviour
 
         while (timeElapsed< time)
         {
-            transform.position=  Vector2.Lerp(this.transform.position, initialPosition, accelerationCurve.Evaluate(speed*Time.deltaTime));
+            transform.position  = Vector2.Lerp(this.transform.position, initialPosition, speed*Time.deltaTime);
             timeElapsed += Time.deltaTime;
             yield return null;
         }
