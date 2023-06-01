@@ -29,10 +29,12 @@ public class PointAndClickSystem : MonoBehaviour
     public float speed = 5f;
 
     private bool isClicking;
-    private void Start()
-    {
 
+
+    private void Awake()
+    {
         thisTrashSprites = new Sprite[2];
+
         sr = GetComponent<SpriteRenderer>();
 
         switch (thisTypeOfTrash)
@@ -69,6 +71,12 @@ public class PointAndClickSystem : MonoBehaviour
         sr.sprite = thisTrashSprites[0];
     }
 
+    private void Start()
+    {
+        SumarBasura();
+        
+    }
+
     private void OnMouseDrag()
     {
         Vector2 mouseDragStartPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -81,6 +89,11 @@ public class PointAndClickSystem : MonoBehaviour
             sr.sprite = thisTrashSprites[1];
         }
 
+    }
+
+    public void SumarBasura()
+    {
+        GameManager.Instance.SumarBasura();
     }
     private void OnMouseDown()
     {
@@ -109,11 +122,7 @@ public class PointAndClickSystem : MonoBehaviour
         if(!isClicking && collision.gameObject.CompareTag("TrashBag")) 
         { 
             Destroy(this.gameObject);
-        }
-        //LÓGICA PARA CLICKEAR FLECHAS DEL PISO
-        if (isClicking && collision.gameObject.CompareTag("Arrow"))
-        {
-            collision.gameObject.SendMessage("GoToScene");
+            GameManager.Instance.RestarBasura();
         }
     }
     private IEnumerator ComeBackToPlace()
