@@ -22,7 +22,6 @@ public class InventorySystem : MonoBehaviour
     {
 
         this.transform.position = new Vector3(v3.x,v3.y + yOffset, 0);
-        Debug.Log(v3);
     }
     public static InventorySystem Instance
     {

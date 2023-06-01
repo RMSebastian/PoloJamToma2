@@ -6,6 +6,7 @@ public class MoveArrowScript : MonoBehaviour
 
     public LevelManager.SceneNames SceneToMoveTo;
     private LevelManager levelManager;
+    private bool changing = false;
     private void Start()
     {
         levelManager = GameManager.Instance.levelManager;
@@ -36,8 +37,9 @@ public class MoveArrowScript : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (!isClicking)
+        if (!isClicking && !changing)
         {
+            StartCoroutine(Timer());
             isClicking = true;
             this.GetComponent<SpriteRenderer>().color = Color.red;
             GoToScene();
@@ -58,4 +60,10 @@ public class MoveArrowScript : MonoBehaviour
 
     }
     #endregion
+    private IEnumerator Timer()
+    {
+        changing = true;
+        yield return new WaitForSecondsRealtime(2);
+        changing = false;
+    }
 }
