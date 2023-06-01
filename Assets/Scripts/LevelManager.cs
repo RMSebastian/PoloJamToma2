@@ -18,7 +18,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public GameObject[] scenes;
-    private Vector3[] cameraUbications;
+    public Vector3[] cameraUbications;
     private void Start()
     {
         cameraUbications = new Vector3[scenes.Length];

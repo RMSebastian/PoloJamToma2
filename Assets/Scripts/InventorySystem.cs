@@ -6,8 +6,12 @@ public class InventorySystem : MonoBehaviour
 {
     // Start is called before the first frame update
     private static InventorySystem instance;
-
+    private float yOffset;
     public GameObject[] slotItems;
+    private void Start()
+    {
+        yOffset = this.transform.position.y;
+    }
     public enum PossibleItems
     {
         Pipe,
@@ -16,7 +20,8 @@ public class InventorySystem : MonoBehaviour
     }
     public void MoveInventoryPositionTo(Vector3 v3)
     {
-        this.transform.position = new Vector3(v3.x,v3.y + this.transform.position.y, 0);
+
+        this.transform.position = new Vector3(v3.x,v3.y + yOffset, 0);
     }
     public static InventorySystem Instance
     {
