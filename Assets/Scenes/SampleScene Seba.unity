@@ -1273,17 +1273,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flechita
       objectReference: {fileID: 0}
-    - target: {fileID: 5153380997938173686, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ca9745a14210f84428baf790cf46299d, type: 2}
     - target: {fileID: 8753513202982636760, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753513202982636760, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.46237993
       objectReference: {fileID: 0}
     - target: {fileID: 8753513202982636760, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1325,8 +1317,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 137.11
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3478861602799759202, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
 --- !u!1 &1880362882
 GameObject:
@@ -1420,7 +1411,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: f2bfb29b14b105c4a949cfc183c1e2cc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1857,10 +1848,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flechita (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 4983503309574404870, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
-      propertyPath: m_TagString
-      value: Arrow
-      objectReference: {fileID: 0}
     - target: {fileID: 7560115924442353727, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
       propertyPath: SceneToMoveTo
       value: 1
@@ -1868,10 +1855,6 @@ PrefabInstance:
     - target: {fileID: 8753513202982636760, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8753513202982636760, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753513202982636760, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1913,6 +1896,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3478861602799759202, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c37463b235ab69e4ab2143d0d816f3a4, type: 3}
