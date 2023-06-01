@@ -6,8 +6,15 @@ public class MoveArrowScript : MonoBehaviour
 
     public LevelManager.SceneNames SceneToMoveTo;
     private LevelManager levelManager;
+    private SpriteRenderer sr;
+
+    public Sprite notHoveredSprite;
+    public Sprite hoveredSprite;
+
     private void Start()
-    {
+    { 
+        sr = GetComponent<SpriteRenderer>();
+        sr.sprite = notHoveredSprite;
         levelManager = GameManager.Instance.levelManager;
     }
     public void GoToScene()
@@ -30,7 +37,7 @@ public class MoveArrowScript : MonoBehaviour
     {
         if (!isClicking)
         {
-            this.GetComponent<SpriteRenderer>().color = Color.yellow;
+            sr.sprite = hoveredSprite;
         }
 
     }
@@ -39,7 +46,7 @@ public class MoveArrowScript : MonoBehaviour
         if (!isClicking)
         {
             isClicking = true;
-            this.GetComponent<SpriteRenderer>().color = Color.red;
+            sr.sprite = hoveredSprite;
             GoToScene();
 
         }
@@ -47,14 +54,13 @@ public class MoveArrowScript : MonoBehaviour
     }
     private void OnMouseUp()
     {
-        this.GetComponent<SpriteRenderer>().color = Color.white;
         isClicking = false;
 
     }
     private void OnMouseExit()
     {
         if (!isClicking)
-            this.GetComponent<SpriteRenderer>().color = Color.white;
+            sr.sprite = notHoveredSprite;
 
     }
     #endregion

@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneToMoveTo: 0
+  notHoveredSprite: {fileID: 1411002147951498731, guid: d6e28772df1cce0408e3fd7578a55d4c, type: 3}
+  hoveredSprite: {fileID: -6153172371257092353, guid: d6e28772df1cce0408e3fd7578a55d4c, type: 3}
 --- !u!50 &3478861602799759202
 Rigidbody2D:
   serializedVersion: 4
