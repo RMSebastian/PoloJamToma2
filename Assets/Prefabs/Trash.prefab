@@ -47,6 +47,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 0}
+  everyTrashSprite:
+  - {fileID: -911535663239612821, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: 33620176252947430, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: 3990096451245456019, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: 7394337117294446086, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: 4307138028907342988, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: 9053322649688538197, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: -1918979859519107446, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: 6891075148172238847, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: -4057054061297890826, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: -426925935166824584, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: 3541086340663056485, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: -6707258668734388479, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: 6079696628570092081, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  - {fileID: 4542851423871055917, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  thisTypeOfTrash: 0
   time: 1
   initialPosition: {x: 0, y: 0}
   speed: 5
@@ -96,8 +112,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: f2bfb29b14b105c4a949cfc183c1e2cc, type: 3}
-  m_Color: {r: 0.24579284, g: 0.15873085, b: 0.8207547, a: 1}
+  m_Sprite: {fileID: -911535663239612821, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -124,7 +140,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.72727275, y: 0.96103895}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

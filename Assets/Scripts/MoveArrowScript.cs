@@ -21,42 +21,4 @@ public class MoveArrowScript : MonoBehaviour
         GameManager.Instance.inventory.MoveInventoryPositionTo(levelManager.GetCameraNewPosition(SceneToMoveTo.GetHashCode()));
         GameManager.Instance.onlyCamera.MoveCameraPositionTo(levelManager.GetCameraNewPosition(SceneToMoveTo.GetHashCode()));
     }
-
-    #region OnTouchArrow
-
-
-    private bool isClicking;
-
-    private void OnMouseOver()
-    {
-        if (!isClicking)
-        {
-            this.GetComponent<SpriteRenderer>().color = Color.yellow;
-        }
-
-    }
-    private void OnMouseDown()
-    {
-        if (!isClicking)
-        {
-            isClicking = true;
-            this.GetComponent<SpriteRenderer>().color = Color.red;
-            GoToScene();
-
-        }
-
-    }
-    private void OnMouseUp()
-    {
-        this.GetComponent<SpriteRenderer>().color = Color.white;
-        isClicking = false;
-
-    }
-    private void OnMouseExit()
-    {
-        if (!isClicking)
-            this.GetComponent<SpriteRenderer>().color = Color.white;
-
-    }
-    #endregion
 }
