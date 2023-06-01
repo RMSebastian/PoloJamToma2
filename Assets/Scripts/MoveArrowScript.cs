@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[RequireComponent(typeof(Animator))]
 public class MoveArrowScript : MonoBehaviour
 {
 
@@ -15,7 +14,7 @@ public class MoveArrowScript : MonoBehaviour
     {
         print("is executing");
         GameManager.Instance.blackScreen.GetComponent<Animator>().SetTrigger("Moving");
-        Invoke("MovingToNextScene", 2f);
+        Invoke(nameof(MovingToNextScene), 2f);
     }
     public void MovingToNextScene()
     {
