@@ -30,6 +30,7 @@ public class LevelManager : MonoBehaviour
 
     public Vector3 GetCameraNewPosition(int i)
     {
+        GameManager.Instance.IsCorrectScene = i;
         return cameraUbications[(int)i];
     }
 

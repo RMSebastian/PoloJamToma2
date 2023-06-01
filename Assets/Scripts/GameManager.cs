@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
 
     public int cantBasuras;
 
+    public bool basuraIsComplete;
+    public bool objetosIsComplete;
+    public int IsCorrectScene;
+
     public void SumarBasura()
     {
         cantBasuras += 1;
@@ -28,6 +32,24 @@ public class GameManager : MonoBehaviour
     public void RestarBasura()
     {
         cantBasuras -= 1;
+
+        if(cantBasuras <= 0)
+        {
+            CheckWin();
+        }
+    }
+    public void CorrectScene(int i)
+    {
+        IsCorrectScene = i;
+        CheckWin();
+    }
+    public void CheckWin()
+    {
+        if(objetosIsComplete && basuraIsComplete && IsCorrectScene == 0)
+        {
+            //Activar animacion del arbol 
+
+        }
     }
 
     private void Awake()
