@@ -19,7 +19,6 @@ public class MoveArrowScript : MonoBehaviour
     }
     public void GoToScene()
     {
-        print("is executing");
         GameManager.Instance.blackScreen.GetComponent<Animator>().SetTrigger("Moving");
         Invoke(nameof(MovingToNextScene), 2f);
     }
@@ -27,6 +26,7 @@ public class MoveArrowScript : MonoBehaviour
     {
         GameManager.Instance.inventory.MoveInventoryPositionTo(levelManager.GetCameraNewPosition(SceneToMoveTo.GetHashCode()));
         GameManager.Instance.onlyCamera.MoveCameraPositionTo(levelManager.GetCameraNewPosition(SceneToMoveTo.GetHashCode()));
+        GameManager.Instance.music.SetMusicScene((SceneToMoveTo.GetHashCode()));
     }
     #region OnTouchArrow
 

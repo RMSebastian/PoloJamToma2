@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public CameraScript onlyCamera;
     public InventorySystem inventory;
     public GameObject blackScreen;
+    public MusicManagerMusic music;
     private void Awake()
     {
         if (instance == null)
