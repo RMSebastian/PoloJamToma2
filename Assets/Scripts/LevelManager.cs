@@ -18,14 +18,16 @@ public class LevelManager : MonoBehaviour
     }
 
     public GameObject[] scenes;
-    public Vector3[] cameraUbications;
-    //private void Start()
-    //{
-    //    for (int i = 0; i < scenes.Length; i++)
-    //    {
-    //        cameraUbications[i] = scenes[i].transform.position;    
-    //    }
-    //}
+    private Vector3[] cameraUbications;
+    private void Start()
+    {
+        cameraUbications = new Vector3[scenes.Length];
+        for (int i = 0; i < scenes.Length; i++)
+        {
+            cameraUbications[i] = new Vector3(scenes[i].transform.position.x, scenes[i].transform.position.y, -10);
+            print(cameraUbications[i]);
+        }
+    }
 
     public Vector3 GetCameraNewPosition(int i)
     {
