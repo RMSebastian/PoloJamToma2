@@ -1,22 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(Animator))]
 public class MoveArrowScript : MonoBehaviour
 {
-    public Animator anim;
 
     public LevelManager.SceneNames SceneToMoveTo;
     private LevelManager levelManager;
     private void Start()
     {
-        anim = GetComponent<Animator>();
         levelManager = GameManager.Instance.levelManager;
     }
     public void GoToScene()
     {
         print("is executing");
-        anim.SetTrigger("Moving");
+        GameManager.Instance.blackScreen.GetComponent<Animator>().SetTrigger("Moving");
+        Invoke("MovingToNextScene", 2f);
     }
     public void MovingToNextScene()
     {

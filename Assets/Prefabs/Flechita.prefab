@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7560115924442353727}
   - component: {fileID: 3478861602799759202}
   - component: {fileID: 5509748549908620239}
+  - component: {fileID: 5153380997938173686}
   m_Layer: 5
   m_Name: Flechita
   m_TagString: Arrow
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe9532b86fee14a498035c3df1e2a1a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   SceneToMoveTo: 0
 --- !u!50 &3478861602799759202
 Rigidbody2D:
@@ -145,3 +147,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.84, y: 1.1}
   m_EdgeRadius: 0
+--- !u!95 &5153380997938173686
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4983503309574404870}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
