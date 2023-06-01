@@ -18,6 +18,7 @@ public class MoveArrowScript : MonoBehaviour
     }
     public void MovingToNextScene()
     {
+        GameManager.Instance.inventory.MoveInventoryPositionTo(levelManager.GetCameraNewPosition(SceneToMoveTo.GetHashCode()));
         GameManager.Instance.onlyCamera.MoveCameraPositionTo(levelManager.GetCameraNewPosition(SceneToMoveTo.GetHashCode()));
     }
 

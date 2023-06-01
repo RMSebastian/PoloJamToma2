@@ -25,7 +25,6 @@ public class LevelManager : MonoBehaviour
         for (int i = 0; i < scenes.Length; i++)
         {
             cameraUbications[i] = new Vector3(scenes[i].transform.position.x, scenes[i].transform.position.y, -10);
-            print(cameraUbications[i]);
         }
     }
 

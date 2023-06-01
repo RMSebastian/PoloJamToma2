@@ -13,8 +13,8 @@ public class GameManager : MonoBehaviour
 
     public LevelManager levelManager;
     public CameraScript onlyCamera;
-    public GameObject blackScreen;
     public InventorySystem inventory;
+    public GameObject blackScreen;
     private void Awake()
     {
         if (instance == null)

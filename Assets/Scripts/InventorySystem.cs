@@ -14,7 +14,10 @@ public class InventorySystem : MonoBehaviour
         Tabaco,
         Honey
     }
-
+    public void MoveInventoryPositionTo(Vector3 v3)
+    {
+        this.transform.position = new Vector3(v3.x,v3.y + this.transform.position.y, 0);
+    }
     public static InventorySystem Instance
     {
         get { return instance; }
