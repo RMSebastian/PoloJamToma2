@@ -21,6 +21,8 @@ public class PointAndClickSystem : MonoBehaviour
         bolsaAplastada
     }
 
+    
+
     [Header("Come Back To Place")]
     public float time = 1f;
     public  Vector2 initialPosition;
