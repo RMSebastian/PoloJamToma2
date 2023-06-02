@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndMenu.unity
     guid: 94df4d8302dce3e469127f6a8afc98ea
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene Seba.unity
     guid: dbf6885f2a8cbf0428aac7a936a56028
   m_configObjects: {}
