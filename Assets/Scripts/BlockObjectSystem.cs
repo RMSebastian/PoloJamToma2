@@ -9,11 +9,12 @@ public class BlockObjectSystem : MonoBehaviour
     public GameObject keyObject;
     private bool isClicking;
     private bool done = false;
+    public Sprite notHoveredSprite;
+    public Sprite hoveredSprite;
 
     [Header("Movement")]
     public float time = 1f;
     public float speed = 5f;
-    public AnimationCurve accelerationCurve;
     private void Start()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();
@@ -25,9 +26,9 @@ public class BlockObjectSystem : MonoBehaviour
     }
     private void OnMouseOver()
     {
-        if (!isClicking)
+        if (!isClicking && !done)
         {
-            sr.color = Color.yellow;
+            sr.sprite = hoveredSprite;
         }
 
     }
@@ -35,6 +36,7 @@ public class BlockObjectSystem : MonoBehaviour
     {
         if (!isClicking && !done)
         {
+            sr.sprite = notHoveredSprite;
             done = true;
             isClicking = true;
             StartCoroutine(Movement());
@@ -43,14 +45,13 @@ public class BlockObjectSystem : MonoBehaviour
     }
     private void OnMouseUp()
     {
-        sr.color = Color.green;
         isClicking = false;
 
     }
     private void OnMouseExit()
     {
         if (!isClicking)
-            sr.color = Color.white;
+            sr.sprite = notHoveredSprite;
 
     }
     private IEnumerator Movement()
@@ -60,10 +61,11 @@ public class BlockObjectSystem : MonoBehaviour
 
         while (timeElapsed < time)
         {
-            transform.position = Vector2.Lerp(this.transform.position, finalPosition, accelerationCurve.Evaluate(speed * Time.deltaTime));
+            transform.position = Vector2.Lerp(this.transform.position, finalPosition, speed * Time.deltaTime);
             timeElapsed += Time.deltaTime;
             yield return null;
         }
         ActivateKey();
+
     }
 }

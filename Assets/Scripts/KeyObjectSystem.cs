@@ -9,6 +9,10 @@ public class KeyObjectSystem : MonoBehaviour
     public InventorySystem.PossibleItems thisItemIs;
 
     private bool isClicking;
+
+    public Sprite hoveredSprite;
+
+    public Sprite notHoveredSprite;
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -18,7 +22,7 @@ public class KeyObjectSystem : MonoBehaviour
     {
         if (!isClicking)
         {
-            sr.color = Color.yellow;
+            sr.sprite = hoveredSprite;
         }
 
     }
@@ -27,7 +31,7 @@ public class KeyObjectSystem : MonoBehaviour
         if (!isClicking)
         {
             isClicking = true;
-            sr.color = Color.red;
+            sr.sprite = notHoveredSprite;
             InventorySystem.Instance.SetItemRenderToEmptySlot(thisItemIs.GetHashCode());
             Destroy(gameObject);
         }
@@ -35,14 +39,13 @@ public class KeyObjectSystem : MonoBehaviour
     }
     private void OnMouseUp()
     {
-        sr.color = Color.green;
         isClicking = false;
 
     }
     private void OnMouseExit()
     {
         if (!isClicking)
-            sr.color = Color.white;
+            sr.sprite = notHoveredSprite;
 
     }
 }
