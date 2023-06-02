@@ -8,9 +8,9 @@ public class EndMenuRestart : MonoBehaviour
     // Start is called before the first frame update
     void Restart()
     {
-        Destroy(GameManager.Instance);
-        Destroy(MusicManagerMusic.Instance);
-        Destroy(InventorySystem.Instance);
+        Destroy(GameManager.Instance.gameObject);
+        Destroy(MusicManagerMusic.Instance.gameObject);
+        Destroy(InventorySystem.Instance.gameObject);
         SceneManager.LoadScene("MainMenu");
     }
 }

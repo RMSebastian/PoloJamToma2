@@ -2067,7 +2067,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055876024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.05, y: 4.32, z: 0}
+  m_LocalPosition: {x: 5.11, y: 4.32, z: 0}
   m_LocalScale: {x: 0.67101, y: 0.67101, z: 0.67101}
   m_Children:
   - {fileID: 136351929}
@@ -2308,6 +2308,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7150413955794471523, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150413955794471523, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1380929335
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150413956673547658, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150413956673547658, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150413956673547658, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1380929335
+      objectReference: {fileID: 0}
     - target: {fileID: 7150413956783897080, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2371,6 +2391,22 @@ PrefabInstance:
     - target: {fileID: 7150413956783897084, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
       propertyPath: m_Name
       value: TroncoGoal
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150413956943269136, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150413956943269136, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2133416497
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150413956961084288, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7150413956961084288, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1380929335
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c349675282f10d4b8393b0f227fac92, type: 3}
