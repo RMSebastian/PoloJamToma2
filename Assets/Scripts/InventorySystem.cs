@@ -24,7 +24,7 @@ public class InventorySystem : MonoBehaviour
     public void MoveInventoryPositionTo(Vector3 v3)
     {
 
-        this.transform.position = new Vector3(v3.x - xOffset ,v3.y + yOffset, 0);
+        this.transform.position = new Vector3(v3.x + xOffset ,v3.y + yOffset, 0);
     }
     public static InventorySystem Instance
     {
