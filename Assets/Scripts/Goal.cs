@@ -24,6 +24,7 @@ public class Goal : MonoBehaviour
     public void ChangeScene()
     {
         MusicManagerMusic.Instance.auso.clip = MusicManagerMusic.Instance.musics[4];
+        InventorySystem.Instance.gameObject.SetActive(false);
         MusicManagerMusic.Instance.auso.Play();
         SceneManager.LoadScene("EndMenu");
     }

@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         if(objetosIsComplete && basuraIsComplete && IsCorrectScene == 0)
         {
             //Activar animacion del arbol 
-            goal.StatementComplete();
+                goal.StatementComplete();
             IsCorrectScene = 1;
         }
     }
