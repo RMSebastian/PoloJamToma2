@@ -8,10 +8,12 @@ public class InventorySystem : MonoBehaviour
     private static InventorySystem instance;
     public GameObject PatasDelPombero;
     private float yOffset;
+    private float xOffset;
     public GameObject[] slotItems;
     private void Start()
     {
         yOffset = this.transform.position.y;
+        xOffset = this.transform.position.x;
     }
     public enum PossibleItems
     {
@@ -22,7 +24,7 @@ public class InventorySystem : MonoBehaviour
     public void MoveInventoryPositionTo(Vector3 v3)
     {
 
-        this.transform.position = new Vector3(v3.x,v3.y + yOffset, 0);
+        this.transform.position = new Vector3(v3.x - xOffset ,v3.y + yOffset, 0);
     }
     public static InventorySystem Instance
     {
