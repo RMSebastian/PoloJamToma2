@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: cd3a301aefaa245409811e11e4e5fbbb
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1898296190379184389
+    second: Objetos animados 002_0
+  - first:
+      213: -3816024340181105484
+    second: Objetos animados 002_1
+  - first:
+      213: -3974148959497460049
+    second: Objetos animados 002_2
+  - first:
+      213: 2955811541370288411
+    second: Objetos animados 002_3
+  - first:
+      213: -509630507924630772
+    second: Objetos animados 002_4
+  - first:
+      213: -2204235654062029171
+    second: Objetos animados 002_5
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -32,7 +50,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -102,7 +120,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Objetos animados 002_0
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 40
+        width: 330
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfea8f52ca5e7a5e0800000000000000
+      internalID: -1898296190379184389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos animados 002_1
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 410
+        width: 330
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4c24da412ca0bc0800000000000000
+      internalID: -3816024340181105484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos animados 002_2
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 433
+        width: 156
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa66aa8c39cf8d8c0800000000000000
+      internalID: -3974148959497460049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos animados 002_3
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 594
+        width: 156
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b193062bfe6250920800000000000000
+      internalID: 2955811541370288411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos animados 002_4
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 422
+        width: 182
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c035370d0cd6de8f0800000000000000
+      internalID: -509630507924630772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos animados 002_5
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 595
+        width: 182
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86c166e95bf861e0800000000000000
+      internalID: -2204235654062029171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
