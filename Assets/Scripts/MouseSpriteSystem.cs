@@ -24,7 +24,7 @@ public class MouseSpriteSystem : MonoBehaviour
         transform.position = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
         transform.position= new Vector3(this.transform.position.x, this.transform.position.y, 0);
 
-        bool check = Physics2D.OverlapCircle(transform.position, 1f, LayerMask.GetMask("Interactable"));
+        bool check = Physics2D.OverlapCircle(transform.position, 0.5f, LayerMask.GetMask("Interactable"));
         if(check && canLook)
         {
             sr.sprite = sr.sprite = hands[2];
