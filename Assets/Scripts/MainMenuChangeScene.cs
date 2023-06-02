@@ -24,7 +24,8 @@ public class MainMenuChangeScene : MonoBehaviour
         auso.clip = menuSound;
         auso.loop = true;
         auso.Play();
-
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
     public void ExitButton()
     {
