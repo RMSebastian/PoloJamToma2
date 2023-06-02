@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public GameObject trashbag;
     public GameObject blackScreen;
     public MusicManagerMusic music;
+    public Goal goal;
 
     public int cantBasuras;
 
@@ -48,7 +49,7 @@ public class GameManager : MonoBehaviour
         if(objetosIsComplete && basuraIsComplete && IsCorrectScene == 0)
         {
             //Activar animacion del arbol 
-
+            goal.StatementComplete();
         }
     }
 
@@ -66,7 +67,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Update()
     {
+        if(IsCorrectScene == 0)
+        {
+            CheckWin() ;
+        }
     }
 }
