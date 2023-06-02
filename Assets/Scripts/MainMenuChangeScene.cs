@@ -51,6 +51,6 @@ public class MainMenuChangeScene : MonoBehaviour
     }
     public void ChangeScene()
     {
-        SceneManager.LoadScene("SampleScene Seba");
+        SceneManager.LoadScene("SampleScene");
     }
 }
