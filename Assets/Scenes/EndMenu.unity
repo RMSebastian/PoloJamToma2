@@ -445,7 +445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 282, y: -639}
+  m_AnchoredPosition: {x: 282, y: -647}
   m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &749342722
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Gracias  chamigo por limpiar mi casa y cuidar la naturaleza\n\n\n\n\nCreditos:\n\nPROGRAMADORES:\n\nROMERO
+  m_text: "Gracias chamigo\n por limpiar mi casa \ny cuidar la naturaleza\n\n\n\n\nCreditos:\n\nPROGRAMADORES:\n\nROMERO
     MAURO\nMARINONI GINO \n\n\nILUSTRADOR:\n\nLIAM PYKE\n\n\nMUSICA Y SONIDO:\n\nSIMON
     CRISTALDO\n\n\nDISE\xD1ADOR:\n\nLISANDRO \"DANIEL\" RIVAS\n\n\n\xA1GRACIAS POR
     JUGAR!\n\n"
