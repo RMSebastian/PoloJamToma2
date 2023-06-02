@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -8838267636535151216
     second: Objetos animados_1
+  - first:
+      213: -665608893007139249
+    second: Objetos animados_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -130,7 +133,7 @@ TextureImporter:
         width: 0
         height: 0
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,10 +145,52 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Objetos animados_1
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 229
+        width: 365
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095bd76696a285580800000000000000
+      internalID: -8838267636535151216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos animados_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 224
+        width: 365
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ee7f40d3843c6f0800000000000000
+      internalID: -665608893007139249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 342c930913b001e46bffd2cc29b7618d
     internalID: 0
     vertices: []
     indices: 
