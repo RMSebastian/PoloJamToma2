@@ -6,6 +6,7 @@ public class InventorySystem : MonoBehaviour
 {
     // Start is called before the first frame update
     private static InventorySystem instance;
+    public GameObject PatasDelPombero;
     private float yOffset;
     public GameObject[] slotItems;
     private void Start()
@@ -53,9 +54,13 @@ public class InventorySystem : MonoBehaviour
                 activedSlots++;
             }
         }
-        if(activedSlots > 3)
+        if(activedSlots >= 3)
         {
-            print("congratulations");
+            GameManager.Instance.objetosIsComplete = true;
+        }
+        else
+        {
+            PatasDelPombero.gameObject.GetComponent<Animator>().SetBool($"Patas{activedSlots}", true);
         }
     }
 }
