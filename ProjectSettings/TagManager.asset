@@ -44,6 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Bag
+    uniqueID: 2862983645
+    locked: 0
+  - name: Trash
+    uniqueID: 2914037961
+    locked: 0
   - name: UI
     uniqueID: 1719562355
     locked: 0
