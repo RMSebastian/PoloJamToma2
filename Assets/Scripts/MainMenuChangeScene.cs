@@ -13,8 +13,10 @@ public class MainMenuChangeScene : MonoBehaviour
 
     public Image imgTitle;
     public Button btnPlay;
+    public Button btnExit;
     public Image imgFadeIn;
-    
+
+    private bool start = false;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -22,18 +24,30 @@ public class MainMenuChangeScene : MonoBehaviour
         auso.clip = menuSound;
         auso.loop = true;
         auso.Play();
-
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+    public void ExitButton()
+    {
+        Application.Quit();
     }
     public void StartButton()
     {
-        imgFadeIn.gameObject.SetActive(true);
-        auso.clip = fiestaSound;
-        auso.Play();
+        if(!start)
+        {
+            start = true;
+            anim.SetTrigger("begin");
+            imgFadeIn.gameObject.SetActive(true);
+            auso.clip = fiestaSound;
+            auso.Play();
+        }
+        
     }
     public void HideUI()
     {
         imgTitle.gameObject.SetActive(false);
         btnPlay.gameObject.SetActive(false);
+        btnExit.gameObject.SetActive(false);
     }
     public void ChangeScene()
     {
