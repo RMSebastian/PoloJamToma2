@@ -11,6 +11,7 @@ public class MoveArrowScript : MonoBehaviour
     public Sprite notHoveredSprite;
     public Sprite hoveredSprite;
 
+    private bool changing = false;
     private void Start()
     { 
         sr = GetComponent<SpriteRenderer>();
@@ -19,8 +20,13 @@ public class MoveArrowScript : MonoBehaviour
     }
     public void GoToScene()
     {
-        GameManager.Instance.blackScreen.GetComponent<Animator>().SetTrigger("Moving");
-        Invoke(nameof(MovingToNextScene), 2f);
+        if(!changing)
+        {
+            StartCoroutine(Timer());
+            GameManager.Instance.blackScreen.GetComponent<Animator>().SetTrigger("Moving");
+            Invoke(nameof(MovingToNextScene), 2f);
+        }
+        
     }
     public void MovingToNextScene()
     {
@@ -64,4 +70,10 @@ public class MoveArrowScript : MonoBehaviour
 
     }
     #endregion
+    private IEnumerator Timer()
+    {
+        changing = true;
+        yield return new WaitForSecondsRealtime(2);
+        changing = false;
+    }
 }
