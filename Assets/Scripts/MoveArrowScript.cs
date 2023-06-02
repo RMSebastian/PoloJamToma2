@@ -33,6 +33,7 @@ public class MoveArrowScript : MonoBehaviour
         GameManager.Instance.inventory.MoveInventoryPositionTo(levelManager.GetCameraNewPosition(SceneToMoveTo.GetHashCode()));
         GameManager.Instance.onlyCamera.MoveCameraPositionTo(levelManager.GetCameraNewPosition(SceneToMoveTo.GetHashCode()));
         GameManager.Instance.music.SetMusicScene((SceneToMoveTo.GetHashCode()));
+        GameManager.Instance.CorrectScene((SceneToMoveTo.GetHashCode()));
     }
     #region OnTouchArrow
 

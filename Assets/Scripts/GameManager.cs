@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
         {
             CheckWin();
             trashbag.GetComponent<Animator>().SetBool("Full", true);
+            basuraIsComplete = true;
         }
         else
         {

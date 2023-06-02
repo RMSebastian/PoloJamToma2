@@ -43,6 +43,7 @@ public class InventorySystem : MonoBehaviour
     public void SetItemRenderToEmptySlot(int i)
     {
         slotItems[i].SetActive(true);
+        GotAllItems();
     }
     public void GotAllItems()
     {
