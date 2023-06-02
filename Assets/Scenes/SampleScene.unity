@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &79372603
 Animator:
   serializedVersion: 3
@@ -1805,6 +1805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9fb68273b9d6cb42ac1d692d48fec40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PatasDelPombero: {fileID: 0}
   slotItems:
   - {fileID: 136351928}
   - {fileID: 373932623}
