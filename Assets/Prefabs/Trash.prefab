@@ -66,8 +66,8 @@ MonoBehaviour:
   thisTypeOfTrash: 0
   touchSound:
   - {fileID: 8300000, guid: 2adbb97e4f95f954085ac39a6cee54e2, type: 3}
-  - {fileID: 8300000, guid: 1e3268e1743a66d45a70b7ae3ae22c2b, type: 3}
-  - {fileID: 8300000, guid: ff680c93b36b00145a364bca07d5666d, type: 3}
+  - {fileID: 8300000, guid: 2b1322dfd4989124dbcd84b93acb0563, type: 3}
+  - {fileID: 8300000, guid: e805e2ea276679c458d7230e5a3d738e, type: 3}
   time: 1
   initialPosition: {x: 0, y: 0}
   speed: 5
@@ -109,7 +109,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1380929335
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -911535663239612821, guid: dae568344721fdd4eb7e20e2eb3dd09e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
