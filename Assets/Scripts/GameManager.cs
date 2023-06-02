@@ -37,6 +37,11 @@ public class GameManager : MonoBehaviour
         if(cantBasuras <= 0)
         {
             CheckWin();
+            trashbag.GetComponent<Animator>().SetBool("Full", true);
+        }
+        else
+        {
+            trashbag.GetComponent<Animator>().SetTrigger("Move");
         }
     }
     public void CorrectScene(int i)
