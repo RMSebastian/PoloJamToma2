@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
         {
             //Activar animacion del arbol 
             goal.StatementComplete();
+            IsCorrectScene = 1;
         }
     }
 
