@@ -23,8 +23,8 @@ public class Goal : MonoBehaviour
     }
     public void ChangeScene()
     {
+        MusicManagerMusic.Instance.auso.clip = MusicManagerMusic.Instance.musics[4];
+        MusicManagerMusic.Instance.auso.Play();
         SceneManager.LoadScene("EndMenu");
-        MusicManagerMusic.Instance.auso.Stop();
-        Destroy(GameManager.Instance);
     }
 }
